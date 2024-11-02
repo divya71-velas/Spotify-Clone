@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="spotify.css"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon " href="./Delta-main/CSS/Project/assets/logo.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wpage">
+
+        <div class="sidebar">
+            <div class="side_nav">
+                <div class="home_option" style="opacity: 1;" >
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#" >Home</a>
+                </div>
+                <div class="home_option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+
+            <div class="library">
+                <div class="lib_option">
+                    <div class="your_lib home_option ">
+                        <img src="./Delta-main/CSS/Project/assets/library_icon.png"/>
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="your_lib_add ">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="side_boxes">
+                    <div class="create_playlist"> 
+                        <div class="cp_1">Create your first playlist</div>
+                        <div class="cp_2">It's easy, we will help you</div>
+                        <div class="badge_1">Create playlist</div>
+                    </div> 
+                    <div class="browse_podcaste create_playlist"> 
+                        <div class="L_1 cp_1">Let's find some podcasts to follow</div>
+                        <div class="L_2 cp_2">We'll keep updated you on new episodes</div>
+                        <div class="badge_2 badge_1">Browse podcasts</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main">
+
+            <div class="sticky_nav_1">
+                <div class="arrows">
+                    <i class="fa-solid fa-chevron-left badge_style"></i>
+                    <i class="fa-solid fa-chevron-right badge_style hide"></i>
+                </div>
+                <div class="user">
+                    <button class="badge_main badge_1 light_badge hide">Explore Premium</button>
+                    <button class="badge_main badge_1 dark_badge"><i class="fa-regular fa-circle-down" style="margin-right: 0.25rem;"></i> Install App</button>
+                    <i class="fa-regular fa-bell badge_style " ></i>
+                    <i class="fa-regular fa-user badge_style"></i>
+                </div> 
+            </div>
+
+            <div class="card_contain">
+                <h2 class="music_card"> Recently Played</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273fe071b636d69f5434f56ebbf" class="card_img" alt="love"/>
+                        <p class="title">LOVE</p>
+                        <p class="info" style="margin-top: -0.75rem; ">Leellamarz</p>
+                    </div> 
+                </div>
+                <div class="card_top_showall">
+                    <h2 class="music_card"> More like Leellamarz</h2>
+                    <h5 class="show_all">Show all</h5>
+                </div>
+                
+                <div class="cards">
+                    <div class="card">
+                        <img src=" leellamarz2.jpg" class="card_img" alt="love"/>
+                        <p class="title">AMBITION</p>
+                        <p class="info">Zico, JUSTHIS & Leellamarz</p>
+                    </div> 
+                    <div class="card">
+                        <img src="leellamarz6.jpg" class="card_img" alt="love"/>
+                        <p class="title">Dope</p>
+                        <p class="info">YGroovyRoom, Hash Swan & CHANGMO</p>
+                    </div> 
+                    <div class="card">
+                        <img src="leellamarz7.png" class="card_img" alt="love"/>
+                        <p class="title">Sinsa</p>
+                        <p class="info">TOIL & Panda Goomm</p>
+                    </div> 
+                    <div class="card">
+                        <img src="leellamarz4.webp" class="card_img" alt="love"/>
+                        <p class="title">Bition Way</p>
+                        <p class="info">ZENE THE ZILA, The Quiett & CHANGMO</p>
+                    </div> 
+                    <div class="card">
+                        <img src="leellamarz5.jpg" class="card_img" alt="love"/>
+                        <p class="title">Purple Love</p>
+                        <p class="info">INJAE (feat. Leellamarz)</p>
+                    </div>    
+                </div>
+                <div class="card_top_showall">
+                    <h2 class="music_card"> Today's biggest hit</h2>
+                    <h5 class="show_all">Show all</h5>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img src="leellamarz3.webp" class="card_img" alt="love"/>
+                        <p class="title">Simba</p>
+                        <p class="info"></p>
+                    </div> 
+                    <div class="card">
+                        <img src="hit5.jpg" class="card_img" alt="love"/>
+                        <p class="title">Tum hi ho</p>
+                        <p class="info"></p>
+                    </div> 
+                    <div class="card">
+                        <img src="hit3.jpeg" class="card_img" alt="love"/>
+                        <p class="title">Sajni</p>
+                        <p class="info">Your daily updates of the most played tracks...</p>
+                    </div> 
+                    <div class="card">
+                        <img src="hit4.jpg"class="card_img" alt="love"/>
+                        <p class="title">Agar tum sath ho</p>
+                        <p class="info">Your daily updates of the most played tracks...</p>
+                    </div> 
+                    <div class="card">
+                        <img src="hit8.jpg" class="card_img" alt="love" style="height: 11rem;"/>
+                        <p class="title">Tauba Tauba</p>
+                        <p class="info">Your daily updates of the most played tracks...</p>
+                    </div> 
+                </div>
+                <div class="card_top_showall">
+                    <h2 class="music_card"> Fresh new start</h2>
+                    <h5 class="show_all">Show all</h5>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img src="./Delta-main/CSS/Project/assets/card2img.jpeg" class="card_img" alt="love"/>
+                        <p class="title">Top 50 Global</p>
+                        <p class="info">Your daily updates of the most played tracks...</p>
+                    </div> 
+                    <div class="card">
+                        <img src="./Delta-main/CSS/Project/assets/card3img.jpeg" class="card_img" alt="love"/>
+                        <p class="title">Top 50 Global</p>
+                        <p class="info">Your daily updates of the most played tracks...</p>
+                    </div> 
+                    <div class="card">
+                        <img src="./Delta-main/CSS/Project/assets/card2img.jpeg" class="card_img" alt="love"/>
+                        <p class="title">Top 50 Global</p>
+                        <p class="info">Your daily updates of the most played tracks...</p>
+                    </div> 
+                    <div class="card">
+                        <img src="./Delta-main/CSS/Project/assets/card3img.jpeg" class="card_img" alt="love"/>
+                        <p class="title">Top 50 Global</p>
+                        <p class="info">Your daily updates of the most played tracks...</p>
+                    </div> 
+                    <div class="card">
+                        <img src="./Delta-main/CSS/Project/assets/card4img.jpeg" class="card_img" alt="love"/>
+                        <p class="title">Top 50 Global</p>
+                        <p class="info">Your daily updates of the most played tracks...</p>
+                    </div> 
+                </div>
+                <div class="card_top_showall">
+                    <h2 class="music_card"> Featured chart</h2>
+                    <h5 class="show_all">Show all</h5>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img src="./Delta-main/CSS/Project/assets/card1img.jpeg" class="card_img" alt="love"/>
+                        <p class="title">Top 50 Global</p>
+                        <p class="info">Your daily updates of the most played tracks...</p>
+                    </div> 
+                    <div class="card">
+                        <img src="./Delta-main/CSS/Project/assets/card5img.jpeg" class="card_img" alt="love"/>
+                        <p class="title">Top 50 Global</p>
+                        <p class="info">Your daily updates of the most played tracks...</p>
+                    </div> 
+                    <div class="card">
+                        <img src="./Delta-main/CSS/Project/assets/card6img.jpeg" class="card_img" alt="love"/>
+                        <p class="title">Top 50 Global</p>
+                        <p class="info">Your daily updates of the most played tracks...</p>
+                    </div> 
+                    <div class="card">
+                        <img src="./Delta-main/CSS/Project/assets/card5img.jpeg" class="card_img" alt="love"/>
+                        <p class="title">Top 50 Global</p>
+                        <p class="info">Your daily updates of the most played tracks...</p>
+                    </div> 
+                    <div class="card">
+                        <img src="./Delta-main/CSS/Project/assets/card6img.jpeg" class="card_img" alt="love"/>
+                        <p class="title">Top 50 Global</p>
+                        <p class="info">Your daily updates of the most played tracks...</p>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="above_line">
+                    <div class="media_left">
+                        <div class="company">
+                            <p class="highlight">Company</p>
+                            <p class="ap">About</p>
+                            <p class="ap">Jobs</p>
+                            <p class="ap">For the record</p>
+                        </div>
+                        <div class="community company">
+                            <p class="highlight">Communities</p>
+                            <p class="ap">For artist</p>
+                            <p class="ap">Developers</p>
+                            <p class="ap">Investors</p>
+                            <p class="ap">Investors</p>
+                            <p class="ap">Vendors</p>
+                        </div>
+                        <div class="links company">
+                            <p class="highlight">Useful links</p>
+                            <p class="ap">Support</p>
+                            <p class="ap">Free Mobile App</p>           
+                        </div>
+                        <div class="plans company">
+                            <p class="highlight"> Spotify Plans</p>
+                            <p class="ap">Premium Individual</p>
+                            <p class="ap">Premium Duo</p>
+                            <p class="ap">Premium Family</p>
+                            <p class="ap">Spotify Free</p>
+                        </div>
+                    </div>        
+                    <div class="media ">
+                        <i class="fa-brands fa-instagram media_style"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                </div>
+                <div class="middle_line"> 
+                    <div class="line"></div>
+                </div>    
+                <div class="below_line"> 
+                    <div class="legal"> 
+                        <h>Legal</h>
+                        <h>Safety & Privacy Center</h>
+                        <h> Privacy Policy</h>
+                        <h> Cookies</h>
+                        <h> About Ads</h>
+                        <h> Accessibility</h>
+                    </div>
+                    <div class="AB">
+                        <i class="fa-regular fa-copyright" ></i>
+                        <h>2024</h>
+                        <h>Spotify</h>
+                        <h>AB</h>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sound-track">
+
+            <div class="album">
+                <img src="https://i.scdn.co/image/ab67616d0000b273fe071b636d69f5434f56ebbf" class="img_track_album"/>
+                <div class="info_track_album">
+                    <p class="song_name_album">Love</p>
+                    <p class="artist_name_album">Leellamarz</p>
+                </div>
+                <span class="material-symbols-outlined">add_circle</span>
+            </div>
+
+            <div class="player">
+                <div class="player_control">
+                    <img src="./Delta-main/CSS/Project/assets/player_icon1.png" class="player_icon"/>
+                    <img src="./Delta-main/CSS/Project/assets/player_icon2.png" class="player_icon"/>
+                    <img src="./Delta-main/CSS/Project/assets/player_icon3.png" style="opacity: 1; height: 2rem; padding-right: 16px ;"/>
+                    <img src="./Delta-main/CSS/Project/assets/player_icon4.png" class="player_icon"/>
+                    <img src="./Delta-main/CSS/Project/assets/player_icon5.png" class="player_icon"/>
+                </div>
+                <div class="player_prog">
+                    <span >1:06</span>
+                    <input type="range" min="0" max="100" class="pro_control " step="1" />
+                    <span>3:30</span>
+                </div>
+                
+            </div>
+
+            <div class="control">
+                <img src="./Delta-main/CSS/Project/Homework Assets/controls_icon1.png" class="control_icon"/>
+                <img src="./Delta-main/CSS/Project/Homework Assets/controld_icon2.png" class="control_icon"/>
+                <img src="./Delta-main/CSS/Project/Homework Assets/controls_icon3.png" class="control_icon" style="height: 1.3rem; width: 1.25rem;"/>
+                <img src="./Delta-main/CSS/Project/Homework Assets/controls_icon4.png" class="control_icon" style="height: 0.95rem; "/>
+                <img src="./Delta-main/CSS/Project/Homework Assets/controls_icon5.png" class="control_icon"/>
+                <input type="range" min="0" max="100" class="sound_control pro_control">
+                <span class="material-symbols-outlined"> crop_5_4</span>
+                <i class="fa-solid fa-up-right-and-down-left-from-center control_icon" style="font-size: 0.85rem; margin-top: 1.5rem;" ></i>
+                
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,627 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: #fff;
+  overflow: hidden;
+  /* cursor: pointer; */
+
+}
+
+.wpage {
+  height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  width: 450px;
+  border-radius: 0.75rem;
+  background-color: black #121212;
+  ;
+
+}
+
+.main {
+  flex: 1;
+  width: 100px;
+  border-radius: 0.75rem;
+  overflow: auto;
+  /* overflow: hidden; */
+  background-color: #121212;
+  padding: 0 1rem;
+  margin-top: 0.5rem;
+}
+
+/* padding: 1.3rem;  if paading given to main - there will be gap b/w sticky_nav and top*/
+
+.sound-track {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 90px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+/* style sidebar div */
+
+/* achor tag style */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* style sidenav in sidebar */
+.side_nav {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly;  we can use this or use center+line hieght=2.9rem*/
+  justify-content: center;
+  background-color: #121212;
+  border-radius: 0.75rem;
+  height: 100px;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.home_option {
+  line-height: 2.9rem;
+  opacity: 0.7
+}
+
+.home_option:hover {
+  opacity: 1;
+
+}
+
+.home_option i {
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+
+.home_option a {
+  font-size: 1rem;
+}
+
+/* style library in sidebar */
+
+.library {
+  background-color: #121212;
+  height: 100%;
+  font-weight: 600;
+  border-radius: 1rem;
+  margin: 0.5rem;
+}
+
+
+.lib_option {
+  display: flex;
+  height: 4.6rem;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+}
+
+.your_lib img {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.your_lib a {
+  margin-left: 1rem;
+}
+
+.your_lib {
+  padding-left: 1rem;
+}
+
+.your_lib_add {
+  font-size: 1.3rem;
+  padding: 0.5rem 0.75rem;
+  ;
+}
+
+.your_lib_add i:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.your_lib_add i {
+  margin-left: 1.2rem;
+  opacity: 0.7;
+}
+
+.side_boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+  /* margin-left: 0.5rem; */
+}
+
+.create_playlist {
+  color: #fff;
+  border-radius: 0.75rem;
+  background-color: #232323;
+  height: 7.5rem;
+  width: 23.5rem;
+  padding: 1rem 1.25rem;
+  /* margin: 0.rem 0; */
+}
+
+.cp_1 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.cp_2 {
+  font-size: 0.875rem;
+  /* opacity: 0.98; */
+  padding-top: 0.8rem;
+  font-weight: 500;
+}
+
+
+
+.badge_1 {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;  
+  use width=fit contet instead of above all */
+  width: fit-content;
+  height: 1.5rem;
+  border: none;
+  background-color: #fff;
+  color: black;
+  font-size: 0.875rem;
+  font-weight: 650;
+  border-radius: 1rem;
+  padding: 0.35rem 1rem;
+  margin-top: 2rem;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.badge_1:hover {
+  transform: scale(1.02);
+  opacity: 0.95;
+}
+
+.browse_podcaste {
+  height: 7.2rem;
+  margin-top: 2rem;
+}
+
+/* style main div */
+
+/* sticky nav in main  */
+.sticky_nav_1 {
+  position: sticky;
+  top: 0;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  z-index: 1;
+  margin-left: -0.5rem;
+}
+
+.arrows i {
+  margin-left: 1rem;
+  color: #fff;
+  font-size: 1.25rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2rem;
+  background-color: rgba(0, 0, 0, .7);
+  opacity: 0.8;
+}
+
+/* .user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+.badge_main {
+  margin-right: 1rem;
+  margin-top: 0;
+
+}
+
+.light_badge {
+  height: 2.1rem;
+  width: 9;
+}
+
+.dark_badge {
+  background-color: black;
+  color: #fff;
+  height: 2.1rem;
+}
+
+.user>i {
+  margin-right: 1rem;
+  color: #fff;
+  font-size: 1.25rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2rem;
+  background-color: rgba(0, 0, 0, .7);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.user i:hover {
+  opacity: 1;
+
+}
+
+/* .badge_style{
+  color: #fff;
+  font-size: 1.25rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2rem;
+  background-color:rgba(0, 0, 0, .7) ;
+  opacity: 0.8;
+} */
+
+@media (max-width: 1000px) {
+  .hide {
+    display: none;
+  }
+
+}
+
+/* cards in main */
+
+.card_top_showall{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.show_all {
+  font-size: 0.875rem;
+  opacity: 0.7;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.show_all:hover {
+  text-decoration: solid underline;
+}
+
+.card {
+  width: 11rem;
+  background-color: #121212;
+  font-weight: 550;
+  border-radius: 0.6rem;
+  padding: 0.85rem ;
+  cursor: pointer;
+  /* margin-right: 2rem; */
+}
+
+.card:hover {
+  background-color: #232323;
+}
+
+.card_img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.info {
+  font-size: 0.855rem;
+  opacity: 0.8;
+  line-height: 1.5rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  
+
+}
+
+
+/* style footer in main */
+
+.footer {
+  height: 40rem;
+  margin-top: 4rem;
+  cursor: pointer;
+
+}
+
+.above_line {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.media_left {
+  display: flex;
+}
+
+.company {
+  margin: 0 4rem 3rem 1rem;
+}
+
+.highlight {
+  font-weight: 700;
+}
+
+.ap {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.ap:hover {
+  text-decoration: underline;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.media i {
+  color: #fff;
+  font-size: 1.25rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.5rem;
+  background-color: #232323;
+  opacity: 0.85;
+  margin: 0 1.5rem 0 0;
+}
+
+.media i:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  /* background-color: #fff;
+  opacity: 0.5;  using this will change the opacity of icons also*/
+}
+
+.middle_line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  width: 95%;
+  border-top: #fff solid 1px;
+  opacity: 0.15;
+}
+
+.below_line {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  font-size: 0.875rem;
+}
+
+.legal h {
+  margin-left: 2rem;
+  opacity: 0.7;
+}
+
+.legal h:hover {
+  opacity: 1;
+}
+
+.AB {
+  margin-right: 3rem;
+  opacity: 0.7;
+}
+
+.AB i {
+  font-size: 0.65rem;
+}
+
+/*style sound track */
+
+/* album in sount track */
+
+.album {
+  width: 25%;
+  /* background-color: #1bd760; */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.img_track_album {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.info_track_album {
+  margin-left: 1rem;
+  line-height: 0.2rem;
+  text-align: left;
+}
+
+.song_name_album {
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.song_name_album:hover {
+  text-decoration: underline;
+}
+
+.artist_name_album {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.artist_name_album:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.material-symbols-outlined {
+  font-size: 1.2rem;
+  opacity: 0.7;
+  padding: 1rem;
+}
+
+.material-symbols-outlined:hover {
+  opacity: 1;
+}
+
+
+/*player in sound control */
+
+.player {
+  width: 50%;
+  cursor: pointer;
+  /* background-color: #232323; */
+}
+
+.player_control {
+  margin-bottom: 0.5rem;
+  /* cursor: pointer; */
+}
+
+.player_icon {
+  height: 1rem;
+  margin: 0.625rem 1.5rem 0.5rem 0;
+  opacity: 0.7;
+}
+
+.player_icon:hover {
+  opacity: 1;
+}
+
+.pro_control {
+  width: 70%;
+  appearance: none;
+  /* cursor: pointer; */
+  background-color: transparent;
+  padding-bottom: 2px;
+}
+
+.player_prog {
+  margin-top: 0.25rem;
+}
+
+
+.player_prog span {
+  font-size: 0.75rem;
+}
+
+.pro_control::-webkit-slider-thumb {
+  appearance: none;
+  height: 0.75rem;
+  width: 0.75rem;
+  /* cursor: ew-resize; */
+  border-radius: 50%;
+  background-color: white;
+  margin-top: -0.295rem;
+  cursor: pointer;
+}
+
+.pro_control::-webkit-slider-runnable-track {
+  background-color: rgb(91, 90, 90);
+  height: 0.23rem;
+  border-radius: 5rem;
+}
+
+/* control in sound track*/
+
+.control {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  /* background-color: aqua; */
+
+  /* background-color: rosybrown; */
+}
+
+.control_icon {
+  height: 2.5rem;
+  padding: 0.25rem;
+  opacity: 0.8;
+}
+
+.control_icon:hover{
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .sticky_nav_1{
+  position: sticky;
+  top:0;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sticky_nav_1 > i{
+  color: #fff;
+  font-size: 1.25rem;
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.4rem;
+  background-color:rgba(0, 0, 0, .7) ;
+  
+
+}
+
+.badge_main{
+  margin-top: 0;
+  
+}
+
+
+.sticky_nav_2{
+  display: flex;
+} */
